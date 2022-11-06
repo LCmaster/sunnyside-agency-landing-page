@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+.heading1, .heading2 {
+    @apply font-fraunces font-extrabold;
+}
+
+.heading1 {
+    @apply uppercase tracking-[6px] text-white text-4xl text-center;
+}
+
+.heading2 {
+    @apply  text-3xl md:text-4xl text-veryDarkDesaturatedBlue;
+}
+
+@tailwind utilities;
+
+.header {
+    background-image: url('./src/assets/mobile/image-header.jpg');
+    background-position: 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bubble-point {
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-bottom: -1px;
+    border-bottom: 1.5rem solid white;
+    border-left: 1.5rem solid transparent;
+}
+
+@media screen and (min-width: 376px) {
+    .header {
+        height: 100vh;
+        background-color: #3ebfff;
+
+        background-image: url('./src/assets/desktop/image-header.jpg');
+        background-position: 50% 100%;
+        background-size: 75%;
+        background-repeat: no-repeat;
+    }
+
+    .feature__heading {
+        max-width: 15ch;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature__paragraph {
+        max-width: 46ch;
+        font-size: 0.88rem;
+        line-height: 150%;
+    }
+
+    .feature__paragraph--small {
+        max-width: 40ch;
+        font-size: 0.88rem;
+        line-height: 150%;
+    }
+}
