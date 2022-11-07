@@ -1,0 +1,6 @@
+.underline {
+    opacity: 0.5;
+}
+.feature__link:hover > .underline {
+    opacity: 1.0;
+}

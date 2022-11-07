@@ -15,6 +15,10 @@
     @apply  text-3xl md:text-4xl text-veryDarkDesaturatedBlue;
 }
 
+.social-link:hover .social-icon {
+    fill: #fff;
+}
+
 @tailwind utilities;
 
 .header {

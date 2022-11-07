@@ -1,5 +1,6 @@
 import React from "react";
 import constants from "../constants";
+import Testimonial from "../component/Testimonial";
 
 function Testimonials() {
   return (
@@ -8,29 +9,9 @@ function Testimonials() {
         {constants.testimonials.title}
       </h2>
       <div className="md:flex md:justify-center md:items-center md:gap-8">
-        {constants.testimonials.entries.map((entry, index) => {
-          return (
-            <div
-              key={index}
-              className="md:basis-1/3 mt-16 flex flex-col items-center text-center"
-            >
-              <img
-                className="rounded-full w-20 h-20 md:w-16 md:h-16 object-cover object-center"
-                src={entry.image}
-                alt={`Image of ${entry.name}`}
-              />
-              <p className="mt-8 font-barlow text-md text-veryDarkGrayishBlue">
-                {entry.content}
-              </p>
-              <h3 className="mt-8 font-fraunces font-black text-lg text-veryDarkDesaturatedBlue">
-                {entry.name}
-              </h3>
-              <h4 className="mt-2 font-barlow text-sm text-darkGrayishBlue">
-                {entry.occupation}
-              </h4>
-            </div>
-          );
-        })}
+        {constants.testimonials.entries.map((entry, index) => (
+          <Testimonial key={index} entry={entry} />
+        ))}
       </div>
     </section>
   );
