@@ -36,7 +36,7 @@ function Header() {
             </ul>
 
             <button
-              className="sm:hidden"
+              className="md:hidden"
               onClick={() => toggle((prev) => !prev)}
             >
               <img src={assets.hamburgerIcon} alt="menu button" />
