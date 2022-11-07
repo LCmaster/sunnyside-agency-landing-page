@@ -5,6 +5,15 @@
     background-repeat: no-repeat;
 }
 
+.bubble-point {
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-bottom: -1px;
+    border-bottom: 1.5rem solid white;
+    border-left: 1.5rem solid transparent;
+}
+
 @media screen and (min-width: 376px) {
     .header {
         height: 100vh;

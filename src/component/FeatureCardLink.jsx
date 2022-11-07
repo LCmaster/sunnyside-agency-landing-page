@@ -1,7 +1,9 @@
 import React from "react";
 import "./FeatureCardLink.css";
 
-function FeatureCardLink({ color }) {
+function FeatureCardLink({ color = "" }) {
+  const bgColor = color.length > 0 ? `bg-${color}` : null;
+  console.log(bgColor);
   return (
     <div className="feature__link relative mt-8 inline-block text-center md:text-left">
       <a
@@ -11,7 +13,18 @@ function FeatureCardLink({ color }) {
         Learn More
       </a>
       <div
-        className={`underline absolute z-10 bottom-0 px-2 rounded-full w-full h-2 bg-${color}`}
+        className={`
+        underline 
+        absolute 
+        bottom-0 
+        w-full 
+        h-2 
+        z-10 
+        px-2 
+        rounded-full 
+        
+        ${bgColor}
+        `}
       ></div>
     </div>
   );

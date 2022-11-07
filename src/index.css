@@ -12,40 +12,11 @@
 }
 
 .heading2 {
-    @apply  text-3xl md:text-4xl text-veryDarkDesaturatedBlue;
-}
-
-.social-link:hover .social-icon {
-    fill: #fff;
+    @apply  text-3xl md:text-4xl;
 }
 
 @tailwind utilities;
 
-.bubble-point {
-    width: 0;
-    height: 0;
-    margin-left: auto;
-    margin-bottom: -1px;
-    border-bottom: 1.5rem solid white;
-    border-left: 1.5rem solid transparent;
-}
-
-@media screen and (min-width: 376px) {
-
-    .feature__heading {
-        max-width: 15ch;
-        margin-bottom: 1.5rem;
-    }
-
-    .feature__paragraph {
-        max-width: 46ch;
-        font-size: 0.88rem;
-        line-height: 150%;
-    }
-
-    .feature__paragraph--small {
-        max-width: 40ch;
-        font-size: 0.88rem;
-        line-height: 150%;
-    }
+.social-link:hover .social-icon {
+    fill: #fff;
 }
