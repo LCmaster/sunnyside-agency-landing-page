@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import assets from "../assets";
 import constants from "../constants";
+import "./Header.css";
 
 function Header() {
   const [isOpen, toggle] = useState(false);
