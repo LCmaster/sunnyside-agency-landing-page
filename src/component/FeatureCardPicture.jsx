@@ -7,7 +7,7 @@ function FeatureCardPicture({ picture }) {
       <img
         src={picture.mobile}
         alt="Image"
-        className="block w-full h-full object-contain"
+        className="block w-full h-full object-cover"
       />
     </picture>
   );
