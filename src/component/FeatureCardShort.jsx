@@ -7,7 +7,7 @@ import "./Feature.css";
 
 function FeatureCardShort({ feature }) {
   return (
-    <div id="graphic-design" className="relative">
+    <div className="relative">
       <FeatureCardPicture picture={feature.image} />
       <div className="w-full px-8 py-16 pb-12 md:flex md:flex-col md:justify-start md:items-center text-center  absolute z-1 bottom-0">
         <FeatureCardTitle style={"text-" + feature.color}>
