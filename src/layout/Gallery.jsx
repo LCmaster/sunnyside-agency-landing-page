@@ -7,7 +7,12 @@ function Gallery() {
       {constants.gallery.map((entry, index) => (
         <picture key={index}>
           <source srcSet={entry.desktop} media="(min-width:376px)" />
-          <img key={index} src={entry.mobile} alt="" />
+          <img
+            key={index}
+            src={entry.mobile}
+            alt=""
+            className="block w-full h-full object-contain"
+          />
         </picture>
       ))}
     </section>

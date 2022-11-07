@@ -6,17 +6,21 @@ import constants from "../constants";
 function Features() {
   return (
     <section id="features">
-      <FeatureCardLong
-        feature={constants.features.transform}
-        isReversed={true}
-      />
-      <FeatureCardLong
-        feature={constants.features.standOut}
-        isReversed={false}
-      />
+      {constants.features
+        .filter((feature) => feature.type === "long")
+        .map((feature, index) => (
+          <FeatureCardLong
+            key={index}
+            feature={feature}
+            isReversed={index % 2 === 0}
+          />
+        ))}
       <div className="md:grid md:grid-cols-2">
-        <FeatureCardShort feature={constants.features.graphicDesign} />
-        <FeatureCardShort feature={constants.features.photography} />
+        {constants.features
+          .filter((feature) => feature.type === "short")
+          .map((feature, index) => (
+            <FeatureCardShort key={index} feature={feature} />
+          ))}
       </div>
     </section>
   );

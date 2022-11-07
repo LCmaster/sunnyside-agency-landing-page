@@ -1,10 +1,8 @@
 import React from "react";
 
-function FeatureCardTitle({ children, color = "" }) {
-  const textColor = color.length > 0 ? `text-${color}` : null;
-  console.log(textColor);
+function FeatureCardTitle({ children, style }) {
   return (
-    <h2 className={`heading2 md:feature__heading ${textColor}`}>{children}</h2>
+    <h2 className={`heading2 md:max-w-[15ch] md:mb-6 ${style}`}>{children}</h2>
   );
 }
 

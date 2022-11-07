@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        softRed: "#fe7867",
         yellow: "#fad400",
-        darkDesaturatedCyan: "#25564b",
+        softRed: "#fe7867",
         darkBlue: "#19536b",
+        darkDesaturatedCyan: "#25564b",
         desaturatedCyan: "#90d4c5",
         darkModerateCyan: "#458c7e",
         veryDarkDesaturatedBlue: "#23303e",
@@ -19,11 +19,14 @@ module.exports = {
         barlow: ["Barlow", "sans-serif"],
         fraunces: ["Fraunces", "serif"],
       },
-      backgroundImage: {
-        "hero-image-desktop": "url('../assets/desktop/image-header.jpg')",
-        "hero-image-mobile": "url('../src/assets/mobile/image-header.jpg')",
-      },
     },
   },
+  safelist: [
+    "bg-yellow",
+    "bg-softRed",
+    "text-veryDarkDesaturatedBlue",
+    "text-darkDesaturatedCyan",
+    "text-darkBlue",
+  ],
   plugins: [],
 };

@@ -1,11 +1,11 @@
 import React from "react";
 
-function FeatureCardParagraph({ children, isCompact = false, color = "" }) {
+function FeatureCardParagraph({ children, isCompact = false, style }) {
   return (
     <p
-      className={`feature__paragraph${
-        isCompact ? "--small" : ""
-      } mt-8 text-base ${color.length > 0 ? "text-" + color : ""}`}
+      className={`${
+        isCompact ? "md:max-w-[40ch]" : "md:max-w-[46ch]"
+      } text-sm leading-[150%] ${style}`}
     >
       {children}
     </p>
