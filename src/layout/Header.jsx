@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container mx-auto relative flex flex-col justify-start py-10">
-        <nav id="main-nav">
+        <nav>
           <div className="flex-1 flex justify-between items-center">
             <div className="logo">
               <img src={assets.logo} alt="Sunnyside" />
